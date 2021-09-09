@@ -1,0 +1,84 @@
+/* ------ *//* ------ *//* ------ */
+/* ------ *//* HEADER *//* ------ */
+/* ------ *//* ------ *//* ------ */
+
+.header{
+    background-color: #b5b5b5;
+}
+
+.header-first-part{
+    width: 100%;
+    border-bottom: 3px solid #8c8c8c;
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90%;
+    column-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+    align-items: center;
+}
+
+.header-sentence{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.header-search-bar{
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.header-second-part{
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+    align-items: center;
+}
+
+.header-categories{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+.header-category-ring{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.header-category-earring{
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.header-category-necklace{
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+.header-category-bracelet{
+    grid-column-start: 4;
+    grid-column-end: 4;
+}
+
+.header-icons{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-icon{
+    padding: 7%;
+}
