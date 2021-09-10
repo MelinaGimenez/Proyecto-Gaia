@@ -1,3 +1,11 @@
+/* ------ *//* ------- *//* ------ */
+/* ------ *//* GENERAL *//* ------ */
+/* ------ *//* ------- *//* ------ */
+
+* {
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+
 /* ------ *//* ------ *//* ------ */
 /* ------ *//* HEADER *//* ------ */
 /* ------ *//* ------ *//* ------ */
@@ -31,7 +39,7 @@
 .header-second-part{
     width: 100%;
     display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     column-gap: 5px;
     grid-auto-rows: minmax(100px, auto);
     justify-items: center;
@@ -39,8 +47,8 @@
 }
 
 .header-categories{
-    grid-column-start: 2;
-    grid-column-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 5;
     display: inline-grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 5px;
@@ -71,8 +79,8 @@
 }
 
 .header-icons{
-    grid-column-start: 3;
-    grid-column-end: 3;
+    grid-column-start: 6;
+    grid-column-end: 6;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -81,4 +89,76 @@
 
 .header-icon{
     padding: 7%;
+}
+
+/* ------ *//* ----- *//* ------ */
+/* ------ *//* INDEX *//* ------ */
+/* ------ *//* ----- *//* ------ */
+
+.index-cart {
+    background-color: #ffc1d5;
+    width: 100%;
+    margin: 20px;
+    border: 2px solid #b5b5b5;
+    text-decoration: underline;
+}
+
+.index-division {
+    margin: 3%;
+}
+
+.index-title {
+    margin: auto;
+    padding: 1%;
+    width: 20%;
+}
+
+.index-title h2 {
+    margin: auto;
+    width: 70%;
+}
+
+.index-products-sections {
+    display: flex;
+    flex-direction: row;
+    background-color: #f4e7d5;
+    width: 90%;
+    margin: auto;
+}
+
+/* ------ *//* ------ *//* ------- *//* ----- */
+/* ------ *//*  CAPSULA PRODUCTO  *//* ------ */
+/* ------ *//* ------ *//* ------ *//* ----- */
+
+.product-capsule {
+    background-color: #b5b5b5;
+    width: 20%;
+    padding: 1%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-capsule-image img {
+    display: block;
+    width: 100%;
+}
+
+.product-capsule-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.product-capsule-details h4{
+    margin: 1%;
+}
+
+.product-capsule-details p{
+    margin: 1%;
+}
+
+.product-capsule-details button {
+    margin: 2%;
+    padding: 2%;
 }

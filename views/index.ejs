@@ -3,12 +3,34 @@
 <%- include('./partials/header.ejs') %>
 
 <main>
-  <div>Acá irá un carrito...</div>
-  <section>
-    <article>Producto 1</article>
-    <article>Producto 2</article>
-    <article>Producto 3</article>
-  </section>
+  <div class="index-cart">
+    Carrito en proceso...
+  </div>
+
+  <div class="index-division">
+    <section class="index-products-sections">
+      <div class="index-title">
+        <h2>Mejores descuentos semanales</h2>
+      </div>
+      <%- include('./partials/product-capsule.ejs') %>
+      <%- include('./partials/product-capsule.ejs') %>
+      <%- include('./partials/product-capsule.ejs') %>
+      <%- include('./partials/product-capsule.ejs') %>
+    </section>
+  </div>
+
+  <div class="index-division">
+    <section class="index-products-sections">
+      <div class="index-title">
+        <h2>Lo más reciente</h2>
+      </div>
+      <%- include('./partials/product-capsule.ejs') %>
+      <%- include('./partials/product-capsule.ejs') %>
+      <%- include('./partials/product-capsule.ejs') %>
+      <%- include('./partials/product-capsule.ejs') %>
+    </section>
+  </div>
+
 </main>
 
 <footer></footer>
