@@ -7,8 +7,22 @@ body {
     padding: 0%;
 }
 
+header {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+}
+
 * {
     font-family: 'Kaisei HarunoUmi', serif;
+}
+
+i {
+    font-size: 17px;
+    padding: 5px;
+    color: black;
 }
 
 /* ------ *//* ------ *//* ------ */
@@ -29,6 +43,7 @@ body {
     grid-auto-rows: minmax(100px, auto);
     justify-items: center;
     align-items: center;
+    padding: 1%;
 }
 
 .header-sentence{
@@ -49,6 +64,7 @@ body {
     grid-auto-rows: minmax(100px, auto);
     justify-items: center;
     align-items: center;
+    padding: 1%;
 }
 
 .header-categories{
@@ -129,6 +145,7 @@ body {
     background-color: #f4e7d5;
     width: 90%;
     margin: auto;
+    padding: 1%;
 }
 
 .index-gems {
@@ -210,4 +227,21 @@ body {
 .product-capsule-details button {
     margin: 2%;
     padding: 2%;
+}
+
+/* ------ *//* ------ *//* ------ */
+/* ------ *//* FOOTER *//* ------ */
+/* ------ *//* ------ *//* ------ */
+
+.footer {
+    background-color: #b5b5b5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+.copyright{
+    background-color: #8c8c8c;
+    padding: 1%;
 }
