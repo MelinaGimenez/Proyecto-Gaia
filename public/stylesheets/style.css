@@ -5,7 +5,7 @@
 body {
     margin: 0%;
     padding: 0%;
-    background-image: url('/images/logotipo/fondo-plata.jpeg');
+    background-image: url('/images/logotipo/fondo-beige.jpeg');
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -26,14 +26,14 @@ header {
 /* ------ *//* ------ *//* ------ */
 
 .header{
-    background-color: #b5b5b5;
+    background-color: #e8c39e;
     width: 100%;
     font-size: 10px;
 }
 
 .header-first-part{
     width: 100%;
-    border-bottom: 3px solid #8c8c8c;
+    border-bottom: 3px solid #9e6730;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1px;
@@ -69,6 +69,7 @@ header {
     grid-auto-rows: minmax(100px, auto);
     justify-items: center;
     align-items: center;
+    border-bottom: solid 3px #eaccad;
 }
 
 .header-second-part img {
@@ -80,13 +81,13 @@ header {
 .hamburguer-menu {
     grid-column-start: 2;
     grid-column-end:2;
-    background-color: #8c8c8c;
+    background-color: #9e6730;
     border-radius: 20%;
     padding: 5%;
 }
 
 .hamburguer-menu i {
-    color: #f4e7d5;
+    color: #f3dbc3;
     font-size: 20px;
 }
 
@@ -140,10 +141,11 @@ header {
 .index-products-sections {
     display: flex;
     flex-direction: row;
-    background-color: #f4e7d5;
+    background-color: #e8c39e;
     width: 90%;
     margin: auto;
     padding: 1%;
+    border: solid 2px #9e6730;
 }
 
 .index-gems {
@@ -151,7 +153,7 @@ header {
     flex-direction: row;
     width: 50%;
     margin: auto;
-    background-color: #f4e7d5;
+    background-color: #e8c39e;
 }
 
 .index-gems img {
@@ -182,7 +184,7 @@ header {
 .index-all-sections {
     display: flex;
     flex-direction: row;
-    background-color: #f4e7d5;
+    background-color: #e8c39e;
     margin-top: 3%;
 }
 
@@ -195,19 +197,21 @@ header {
 /* ------ *//* ------ *//* ------ *//* ----- */
 
 .product-capsule {
-    background-color: #fadcaf;
+    background-color: #f3dbc3;
     width: 20%;
     padding: 2%;
     margin: 1%;
     display: flex;
     flex-direction: column;
     border-radius: 10%;
+    border: solid 2px #eaccad;
 }
 
 .product-capsule-image img {
     display: block;
     width: 100%;
     border-radius: 10%;
+    border: solid 2px #9e6730;
 }
 
 .product-capsule-details {
@@ -234,7 +238,7 @@ header {
 /* ------ *//* ------ *//* ------ */
 
 .footer {
-    background-color: #b5b5b5;
+    background-color: #9e6730;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -242,7 +246,7 @@ header {
 }
 
 .copyright{
-    background-color: #8c8c8c;
+    background-color: #804000;
     padding: 1%;
 }
 

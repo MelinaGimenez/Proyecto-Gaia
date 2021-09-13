@@ -1,11 +1,14 @@
 # joyas
 
-Paleta de colores
+Nueva paleta de colores
 
-<!-- #ffc1d5 rosa palido -->
-<!-- #8c8c8c gris -->
-<!-- #b5b5b5 gris claro -->
-<!-- #f4e7d5 no se pero sirve -->
+<!-- 
+#f3dbc3 - crema
+#eaccad - beige claro
+#e8c39e - beige
+#9e6730 - marron 
+#804000 - marron más oscuro
+-->
 
 JS front para Header
 <!-- 
