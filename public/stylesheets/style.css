@@ -17,10 +17,6 @@ header {
     width: 100%;
 }
 
-footer {
-    width: 100%;
-}
-
 * {
     font-family: 'Kaisei HarunoUmi', serif;
 }
@@ -121,10 +117,9 @@ footer {
 
 .index-cart {
     background-color: #ffc1d5;
-    width: 100%;
-    margin: 20px;
     border: 2px solid #b5b5b5;
     text-decoration: underline;
+    margin: 5%;
 }
 
 .index-division {
@@ -133,13 +128,13 @@ footer {
 
 .index-title {
     margin: auto;
-    padding: 1%;
     width: 20%;
 }
 
-.index-title h2 {
+.index-title p {
     margin: auto;
-    width: 70%;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .index-products-sections {
