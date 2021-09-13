@@ -145,15 +145,16 @@ header {
     width: 90%;
     margin: auto;
     padding: 1%;
-    border: solid 2px #9e6730;
+    border: solid 2px #eaccad;
 }
 
 .index-gems {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 70%;
     margin: auto;
-    background-color: #e8c39e;
+    background-color: #f3dbc3;
+    border: 2px solid #eaccad;
 }
 
 .index-gems img {
@@ -167,29 +168,69 @@ header {
     padding: 2%;
     display: flex;
     flex-direction: column;
+    font-size: 13px;
 }
 
-.index-gems-text p {
+.index-gems-text-question {
     margin: auto;
+    width: 100%;
+    text-align: center;
+    margin: 2%;
 }
 
-.index-gems-text h3 {
+.index-gems-text-title {
     margin: auto;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
 }
 
-.index-gems-text a {
+.index-gems-text-links {
     margin: auto;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.index-gems-text-links a {
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: #e8c39e;
+    padding: 2%;
+    border-radius: 20%;
 }
 
 .index-all-sections {
-    display: flex;
-    flex-direction: row;
     background-color: #e8c39e;
     margin-top: 3%;
+    border: solid 2px #eaccad ;
 }
 
-.index-all-sections img {
+.index-all-sections-title {
+    margin: 2%;
+    text-align: center;
+}
+
+.index-all-sections-products {
+    display: flex;
+    flex-direction: row;
+}
+
+.index-all-sections article {
+    width: 21%;
     padding: 2%;
+}
+
+.index-all-sections article img {
+    width: 100%;
+}
+
+.index-all-sections article p {
+    margin: auto;
+    text-align: center;
 }
 
 /* ------ *//* ------ *//* ------- *//* ----- */
@@ -220,17 +261,21 @@ header {
     width: 100%;
 }
 
-.product-capsule-details h4{
+.product-capsule-details-name{
     margin: 1%;
+    font-size: 15px;
+    font-weight: bold;
 }
 
-.product-capsule-details p{
+.product-capsule-details-price{
     margin: 1%;
+    font-size: 15px;
 }
 
 .product-capsule-details button {
     margin: 2%;
     padding: 2%;
+    height: 30%;
 }
 
 /* ------ *//* ------ *//* ------ */
@@ -238,16 +283,24 @@ header {
 /* ------ *//* ------ *//* ------ */
 
 .footer {
+    padding-left: 5%;
     background-color: #9e6730;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 1%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    column-gap: 1%;
+    row-gap: 1px;
+    font-size: 12px;
+}
+
+.footer i {
+    padding: 3%;
 }
 
 .copyright{
     background-color: #804000;
     padding: 1%;
+    font-size: 13px;
 }
 
 /* ------ *//* ---------- *//* ------ */
@@ -308,6 +361,16 @@ header {
         flex-direction: row;
         justify-content: center;
         width: 100%;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        background-color: #9e6730;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1%;
     }
 }
 
