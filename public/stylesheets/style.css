@@ -5,6 +5,12 @@
 body {
     margin: 0%;
     padding: 0%;
+    background-image: url('/images/logotipo/fondo-plata.jpeg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: content-box;
 }
 
 header {
@@ -19,89 +25,82 @@ footer {
     font-family: 'Kaisei HarunoUmi', serif;
 }
 
-i {
-    font-size: 17px;
-    padding: 5px;
-    color: black;
-}
-
 /* ------ *//* ------ *//* ------ */
 /* ------ *//* HEADER *//* ------ */
 /* ------ *//* ------ *//* ------ */
 
 .header{
     background-color: #b5b5b5;
+    width: 100%;
+    font-size: 10px;
 }
 
 .header-first-part{
     width: 100%;
     border-bottom: 3px solid #8c8c8c;
-    display: inline-grid;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 90%;
-    column-gap: 5px;
-    grid-auto-rows: minmax(100px, auto);
+    column-gap: 1px;
     justify-items: center;
     align-items: center;
-    padding: 1%;
 }
 
 .header-sentence{
     grid-column-start: 1;
     grid-column-end: 1;
+    font-size: 15px;
 }
 
 .header-search-bar{
     grid-column-start: 2;
     grid-column-end: 2;
+    width: 80%;
+}
+
+.search-bar input{
+    width: 70%;
+}
+
+.search-bar button{
+    width: 20%;
 }
 
 .header-second-part{
     width: 100%;
-    display: inline-grid;
-    grid-template-columns: repeat(6, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 5px;
     grid-auto-rows: minmax(100px, auto);
     justify-items: center;
     align-items: center;
-    padding: 1%;
+}
+
+.header-second-part img {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    height: 80px;
+}
+
+.hamburguer-menu {
+    grid-column-start: 2;
+    grid-column-end:2;
+    background-color: #8c8c8c;
+    border-radius: 20%;
+    padding: 5%;
+}
+
+.hamburguer-menu i {
+    color: #f4e7d5;
+    font-size: 20px;
 }
 
 .header-categories{
-    grid-column-start: 3;
-    grid-column-end: 5;
-    display: inline-grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 5px;
-    grid-auto-rows: minmax(100px, auto);
-    align-items: center;
-    justify-items: center;
-    width: 100%;
-}
-
-.header-category-ring{
-    grid-column-start: 1;
-    grid-column-end: 1;
-}
-
-.header-category-earring{
-    grid-column-start: 2;
-    grid-column-end: 2;
-}
-
-.header-category-necklace{
-    grid-column-start: 3;
-    grid-column-end: 3;
-}
-
-.header-category-bracelet{
-    grid-column-start: 4;
-    grid-column-end: 4;
+    display: none;
 }
 
 .header-icons{
-    grid-column-start: 6;
-    grid-column-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 3;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -109,7 +108,11 @@ i {
 }
 
 .header-icon{
-    padding: 7%;
+    padding: 5%;
+}
+
+.header-icon i {
+    font-size: 15px;
 }
 
 /* ------ *//* ----- *//* ------ */
@@ -173,7 +176,7 @@ i {
     margin: auto;
 }
 
-.index-gems-text h4 {
+.index-gems-text h3 {
     margin: auto;
 }
 
@@ -197,17 +200,19 @@ i {
 /* ------ *//* ------ *//* ------ *//* ----- */
 
 .product-capsule {
-    background-color: #b5b5b5;
+    background-color: #fadcaf;
     width: 20%;
-    padding: 1%;
+    padding: 2%;
     margin: 1%;
     display: flex;
     flex-direction: column;
+    border-radius: 10%;
 }
 
 .product-capsule-image img {
     display: block;
     width: 100%;
+    border-radius: 10%;
 }
 
 .product-capsule-details {
@@ -245,3 +250,68 @@ i {
     background-color: #8c8c8c;
     padding: 1%;
 }
+
+/* ------ *//* ---------- *//* ------ */
+/* ------ *//* RESPONSIVE *//* ------ */
+/* ------ *//* ---------- *//* ------ */
+
+/* TABLET */
+
+@media (min-width: 481px) {
+}
+
+/* DESKTOPS */
+
+@media (min-width: 769px) {
+
+    /* HEADER */
+
+    .hamburguer-menu {
+        display: none;
+    }
+
+    .header-categories{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        display: inline-grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 5px;
+        grid-auto-rows: minmax(100px, auto);
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+    }
+    
+    .header-category-ring{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    
+    .header-category-earring{
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+    
+    .header-category-necklace{
+        grid-column-start: 3;
+        grid-column-end: 3;
+    }
+    
+    .header-category-bracelet{
+        grid-column-start: 4;
+        grid-column-end: 4;
+    }
+
+    .header-icons{
+        grid-column-start: 6;
+        grid-column-end: 6;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* DESKTOPS+ */
+
+@media (min-width: 1280px) {}
