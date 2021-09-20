@@ -1,4 +1,4 @@
-# joyas
+# Joyería Gaia
 
 Nueva paleta de colores
 
