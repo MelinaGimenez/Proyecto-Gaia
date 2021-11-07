@@ -3,42 +3,85 @@
 <%- include('./partials/header.ejs') %>
 
 <main>
-    <form action="/users/register" method="POST" class="register-form">
+
+    <form action="/users/register" method="POST" class="register-form" enctype="multipart/form-data">
         <div class="register-form-box">
             <div class="register-form-box-text">
                 <div class="register-form-label">
                     <label for="name">Nombre
-                    <input type="text" id="name">
-                </label>
-                </div>
-                <div class="register-form-label">
-                    <label for="">Apellido
-                        <input type="text">
+                        <!-- Si se escribio algo lo guardara en el value -->
+                        <input type="text" id="name" name="name"
+                        value="<%=locals.oldData ? oldData.name : null %>">
+                        <!-- Si existe errors y tiene uno llamado name -->
+                        <% if(locals.errors && errors.name) { %>
+                            <div class="form-error-msg">
+                                <!-- Entonces se muestra el mensaje -->
+                                <%= errors.name.msg %>
+                            </div>
+                        <% } %>
                     </label>
                 </div>
                 <div class="register-form-label">
-                    <label for="">Avatar
-                        <input type="file">
+                    <label for="lastname">Apellido
+                        <input type="text" id="lastname" name="lastname"
+                        value="<%=locals.oldData ? oldData.lastname : null %>">
+                        <% if(locals.errors && errors.lastname) { %>
+                            <div class="form-error-msg">
+                                <%= errors.lastname.msg %>
+                            </div>
+                        <% } %>
                     </label>
                 </div>
                 <div class="register-form-label">
-                    <label for="">Cumpleaños
-                        <input type="date">
+                    <label for="avatar">Avatar
+                        <input type="file" id="avatar" name="avatar">
+                        <% if(locals.errors && errors.avatar) { %>
+                            <div class="form-error-msg">
+                                <%= errors.avatar.msg %>
+                            </div>
+                        <% } %>
                     </label>
                 </div>
                 <div class="register-form-label">
-                    <label for="">Email
-                        <input type="email">
+                    <label for="birthday">Cumpleaños
+                        <input type="date" id="birthday" name="birthday"
+                        value="<%=locals.oldData ? oldData.birthday : null %>">
+                        <% if(locals.errors && errors.birthday) { %>
+                            <div class="form-error-msg">
+                                <%= errors.birthday.msg %>
+                            </div>
+                        <% } %>
                     </label>
                 </div>
                 <div class="register-form-label">
-                    <label for="">Contraseña
-                        <input type="text">
+                    <label for="email">Email
+                        <input type="email" id="email" name="email"
+                        value="<%=locals.oldData ? oldData.email : null %>">
+                        <% if(locals.errors && errors.email) { %>
+                            <div class="form-error-msg">
+                                <%= errors.email.msg %>
+                            </div>
+                        <% } %>
                     </label>
                 </div>
                 <div class="register-form-label">
-                    <label for="">Confirmar contraseña
-                        <input type="text">
+                    <label for="password">Contraseña
+                        <input type="password" id="password" name="password">
+                        <% if(locals.errors && errors.password) { %>
+                            <div class="form-error-msg">
+                                <%= errors.password.msg %>
+                            </div>
+                        <% } %>
+                    </label>
+                </div>
+                <div class="register-form-label">
+                    <label for="passwordCheck">Confirmar contraseña
+                        <input type="password" id="passwordCheck" name="passwordCheck">
+                        <% if(locals.errors && errors.passwordCheck) { %>
+                            <div class="form-error-msg">
+                                <%= errors.passwordCheck.msg %>
+                            </div>
+                        <% } %>
                     </label>
                 </div>
                 <div>

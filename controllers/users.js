@@ -1,18 +1,27 @@
+const { validationResult } = require('express-validator')
+
 let usersController = {
+    // Renderiza vista registro
     register: (req, res) => {
         res.render('register', {
             title: 'register'
         });
     },
     processRegister: (req, res) => {
-        let name = req.body.name
-        let lastName = req.body.lastName
-        let avatar = req.body.avatar
-        let birthday = req.body.birthday
-        let email = req.body.email
-        let password = req.body.password
-        let passwordCheck = req.body.passwordCheck
+        let validation = validationResult(req);
+        // Si hay errores, los enviara junto a la vista
+        if(validation.errors.length > 0) {
+            return res.render('register', 
+            { 
+                // Recorre el array para sacar errores
+                errors: validation.mapped(),
+                // Guarda la informacion al refrescar pagina
+                oldData: req.body,
+            },
+        )}
+           return res.send('Formulario completado con éxito')
     },
+    // Renderiza vista login
     login: (req, res) => {
         res.render('login', {
             title: 'login'

@@ -16,8 +16,9 @@ app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+// Linea necesaria para ver validaciones
+app.use(express.urlencoded({ extended: false }));
 
 let publicPath = path.resolve('public');
 app.use(express.static(publicPath));
