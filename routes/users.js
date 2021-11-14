@@ -22,7 +22,7 @@ const uploadFile = multer({ storage })
 // Validaciones
 const validations = [
     body('name').notEmpty().withMessage('Debes agregar un nombre'),
-    body('lastName').notEmpty().withMessage('Debes agregar un apellido'),
+    body('lastname').notEmpty().withMessage('Debes agregar un apellido'),
     body('birthday').notEmpty().withMessage('Debes agregar tu cumpleaños'),
     body('email').notEmpty().withMessage('Debes agregar tu email').bail()
     .isEmail().withMessage('Debes escribir un formato de mail válido'),

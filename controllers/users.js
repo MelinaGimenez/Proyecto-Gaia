@@ -18,8 +18,9 @@ let usersController = {
                 // Guarda la informacion al refrescar pagina
                 oldData: req.body,
             },
-        )}
-           return res.send('Formulario completado con éxito')
+        )} else {
+            res.redirect('/')
+        }
     },
     // Renderiza vista login
     login: (req, res) => {
