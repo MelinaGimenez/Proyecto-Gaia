@@ -1,4 +1,5 @@
 const { validationResult } = require('express-validator')
+const db = require('../database/models')
 
 let usersController = {
     // Renderiza vista registro
@@ -22,6 +23,7 @@ let usersController = {
             res.redirect('/')
         }
     },
+    dbregister: (req, res) => {},
     // Renderiza vista login
     login: (req, res) => {
         res.render('login', {
